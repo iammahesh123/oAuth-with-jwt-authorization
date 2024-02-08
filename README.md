@@ -12,37 +12,37 @@ Before you dive in, make sure you have the following installed:
 Apache Maven
 MongoDB or another supported database (you'll need to configure this in application.properties)
 Postman or some other tool for testing APIs
-## Installation
-Clone the Repository: Get yourself a copy of this project by running:
 
-bash ``
-  git clone https://github.com/example/oAuth.git
-Go to the Project Directory: Jump into the project folder:
+### Step 1: Clone the Project
 
-bash
-Copy code
-cd oAuth
-Build the Project: Fire up Maven to build the project:
+1. Open a terminal on your computer.
 
-bash
-Copy code
-mvn clean install
-Run the App: Start the Spring Boot magic:
+2. Clone the project repository by running the following command:
+   ```bash
+   git clone [<repository-url>](https://github.com/iammahesh123/JwtAuthorizationdemo.git)
+   cd JwtAuthorizationdemo
 
-bash
-Copy code
-mvn spring-boot:run
+3. Go to the Project Directory: Jump into the project folder
+   ```bash
+   mvn clean install
+4. Run the App: Start the Spring Boot magic:
+   ```bash
+   mvn spring-boot:run
+
 ## How to Use It
+
 Once the app is up and running, you can start playing around with it using some HTTP requests. Here's a quick rundown of the available endpoints:
 
-POST /api/auth/register: Register a new user. Just send over a JSON with userName and password, and you'll get a JWT token in return!
+`POST /api/auth/register`: Register a new user. Just send over a JSON with userName and password, and you'll get a JWT token in return!
 
-POST /api/auth/login: Log in an existing user. Again, a JSON with userName and password will do the trick. You'll get a shiny new JWT token as a reward for logging in successfully.
+`POST /api/auth/login` : Log in an existing user. Again, a JSON with userName and password will do the trick. You'll get a shiny new JWT token as a reward for logging in successfully.
 
-POST /api/auth/token: Need to refresh your JWT token? No problemo! Send the old token as refreshToken in a JSON payload, and voilà! You'll get a fresh one in return.
+`POST /api/auth/token` : Need to refresh your JWT token? No problemo! Send the old token as refreshToken in a JSON payload, and voilà! You'll get a fresh one in return.
 
 ## Contributing
+
 We're totally open to contributions! Found a bug? Have an awesome idea for an improvement? Feel free to open an issue or send us a pull request. Let's make this project even better together!
 
 ## License
+
 This project is licensed under the MIT License. So go ahead, tweak it, share it, do whatever you want with it (just don't forget to credit us 😉).
