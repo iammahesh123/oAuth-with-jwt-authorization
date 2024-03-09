@@ -19,7 +19,7 @@ Postman or some other tool for testing APIs
 
 2. Clone the project repository by running the following command:
    ```bash
-   git clone [<repository-url>](https://github.com/iammahesh123/JwtAuthorizationdemo.git)
+   git clone [<repository-url>](https://github.com/iammahesh123/oAuth-with-jwt-authorization.git)
    cd JwtAuthorizationdemo
 
 3. Go to the Project Directory: Jump into the project folder
